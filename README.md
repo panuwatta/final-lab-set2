@@ -23,7 +23,7 @@
 - **Auth Service**: https://auth-service-production-a03d.up.railway.app
 - **Task Service**: https://task-service-production-201e.up.railway.app
 - **Activity Service**: https://activity-service-production-527d.up.railway.app
-- **Frontend**: https://final-lab-set2-production-c9xx.up.railway.app
+- **Frontend**: https://frontend-production-de8c.up.railway.app
 
 ![Railway Deployment](screenshots/railway.png)
 
