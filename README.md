@@ -155,7 +155,7 @@ final-lab-set2/
 
 1. **Clone repository**
 ```bash
-git clone <repository-url>
+git clone git@github.com:panuwatta/final-lab-set2.git
 cd final-lab-set2
 ```
 
@@ -219,8 +219,8 @@ docker-compose up -d
 
 ## 📝 รายงานรายบุคคล
 
-รายงานการมีส่วนร่วมรายบุคคลมีอยู่ใน:
-- `INDIVIDUAL_REPORT_[studentid].md`
+มีอยู่ใน:
+- [รายงานการมีส่วนร่วม](INDIVIDUAL_REPORT_67543210050-0.md)
 
 ## 🐛 การแก้ไขปัญหา
 
