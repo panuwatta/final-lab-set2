@@ -1,0 +1,12 @@
+{
+  "name": "microservices-app",
+  "version": "1.0.0",
+  "description": "Microservices application with auth, task, activity, and log services",
+  "main": "start.sh",
+  "scripts": {
+    "start": "./start.sh"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
