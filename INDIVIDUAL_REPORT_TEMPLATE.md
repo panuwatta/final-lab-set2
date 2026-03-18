@@ -1,9 +1,16 @@
-# รายงานรายบุคคล - INDIVIDUAL_REPORT_TEMPLATE-44-3.md
+# รายงานรายบุคคล - Template
+
+> **หมายเหตุ**: นี่คือไฟล์ template สำหรับการสร้างรายงานรายบุคคล  
+> ดูตัวอย่างรายงานที่สมบูรณ์ได้ที่:
+> - [รายงานของ ภานุวัฒน์ ต๋าคำ (67543210044-3)](INDIVIDUAL_REPORT_67543210044-3.md)
+> - [รายงานของ เอกพันธ์ ทศทิศรังสรรค์ (67543210050-0)](INDIVIDUAL_REPORT_67543210050-0.md)
 
 ## ข้อมูลผู้จัดทำ
 - **ชื่อ-นามสกุล**: ภานุวัฒน์ ต๋าคำ
-- **รหัสนักศึกษา**: 67543210044-3
-- **กลุ่ม**: 14
+- **รหัสนักศึกษา**: เอกพันธ์ ทศทิศรังสรรค์
+- **กลุ่ม**: [14
+- **รายวิชา**: ENGSE207 Software Architecture
+- **โปรเจค**: Final Lab Set 2 - ระบบจัดการงานแบบ Microservices
 
 ![Individual Report](screenshots/01.png)
 
@@ -20,8 +27,6 @@
 - **Activity Dashboard**: การแสดง activity timeline, การโต้ตอบของผู้ใช้
 - **Responsive Design**: ส่วนติดต่อที่เป็นมิตรกับมือถือ, การจัดแต่ง CSS ทันสมัย
 
-![Responsibilities](screenshots/02.png)
-
 ### Infrastructure & Deployment
 - **Railway Deployment**: การ deploy service บน cloud, การตั้งค่า environment
 - **Database Management**: การตั้งค่า PostgreSQL, การออกแบบ schema, การย้ายข้อมูล
@@ -32,6 +37,8 @@
 - **API Integration**: การสื่อสารระหว่าง service, การจัดการข้อผิดพลาด
 - **Testing & Validation**: การทดสอบแบบ end-to-end, การตรวจสอบ API
 
+![Responsibilities](screenshots/02.png)
+
 ## สิ่งที่ได้ดำเนินการด้วยตนเอง
 
 ### การพัฒนาทางเทคนิค
@@ -39,20 +46,19 @@
 
 ![Technical Implementation](screenshots/03.png)
 
-#### การพัฒนา Backend
+#### การพัฒนา Backend Services
 - เขียน authentication routes และ JWT middleware
 - พัฒนา API endpoints สำหรับการจัดการงาน
 - สร้างระบบบันทึก activity ข้าม service
 - ออกแบบ database schema และความสัมพันธ์
 
-#### การพัฒนา Frontend  
+#### การพัฒนา Frontend Application
 - พัฒนาส่วนติดต่อผู้ใช้สำหรับเข้าสู่ระบบ/สมัครสมาชิก
 - สร้าง dashboard การจัดการงาน
 - ออกแบบการแสดง activity timeline
 - จัดการการรวม API และการจัดการข้อผิดพลาด
 
-![Frontend Development](screenshots/04.png)
-
+![Development Process](screenshots/04.png)
 #### DevOps & Deployment
 - ตั้งค่าการ deploy บน Railway
 - จัดการ environment variables และ secrets
@@ -70,7 +76,7 @@
 ### ปัญหาที่ 1: การซิงค์ฐานข้อมูล
 **ปัญหา**: Task service ไม่สามารถ JOIN กับตาราง users ได้เพราะแต่ละ service ใช้ฐานข้อมูลแยกกัน
 
-![Database Problem](screenshots/05.png)
+![Problem Screenshot](screenshots/05.png)
 
 **วิธีแก้ไข**: 
 - วิเคราะห์ trade-off ระหว่าง shared database กับ separate databases
@@ -83,7 +89,7 @@
 ### ปัญหาที่ 2: การยืนยันตัวตนข้าม Service
 **ปัญหา**: JWT token ที่สร้างจาก auth-service ใช้ไม่ได้กับ services อื่น
 
-![Authentication Problem](screenshots/06.png)
+![Problem Screenshot](screenshots/06.png)
 
 **วิธีแก้ไข**:
 - ตรวจสอบ JWT_SECRET ให้เหมือนกันทุก service
@@ -96,7 +102,7 @@
 ### ปัญหาที่ 3: การตั้งค่าการ Deploy บน Railway
 **ปัญหา**: Services deploy ไม่สำเร็จเพราะ environment variables และ dependencies
 
-![Deployment Problem](screenshots/07.png)
+![Problem Screenshot](screenshots/07.png)
 
 **วิธีแก้ไข**:
 - ศึกษากระบวนการ deploy ของ Railway
@@ -132,7 +138,7 @@
 - **การทดสอบการรวม**: การทดสอบระบบแบบ end-to-end
 - **การจัดทำเอกสาร**: การจัดทำเอกสารสำหรับ distributed systems
 
-![Collaboration Learning](screenshots/09.png)
+![Learning Process](screenshots/09.png)
 
 ## แนวทางการพัฒนาต่อไปใน Set 2
 
@@ -171,3 +177,27 @@
 ## บทสรุป
 
 การทำงานใน Final Lab Set 2 ให้ประสบการณ์ที่มีค่าในการพัฒนาระบบ microservices จริง ตั้งแต่การออกแบบสถาปัตยกรรม การแก้ไขปัญหาทางเทคนิค ไปจนถึงการ deploy บน production ความรู้และประสบการณ์ที่ได้จะเป็นพื้นฐานสำคัญสำหรับการพัฒนาระบบที่ซับซ้อนมากขึ้นในอนาคต
+
+---
+
+## ตัวอย่างรายงานที่สมบูรณ์
+
+สำหรับการเขียนรายงานรายบุคคลที่สมบูรณ์ สามารถดูตัวอย่างได้จาก:
+
+### รายงานของสมาชิกในทีม
+- **[ภานุวัฒน์ ต๋าคำ (67543210044-3)](INDIVIDUAL_REPORT_67543210044-3.md)** - เน้นงาน Backend Services, Database Design, Security & Authentication
+- **[เอกพันธ์ ทศทิศรังสรรค์ (67543210050-0)](INDIVIDUAL_REPORT_67543210050-0.md)** - เน้นงาน Frontend Development, Activity Service, Infrastructure & Deployment
+
+### คำแนะนำในการเขียน
+1. **ปรับเนื้อหาให้เหมาะสม**: ใช้ template นี้เป็นแนวทาง แต่ปรับเนื้อหาให้สอดคล้องกับงานที่ตนเองรับผิดชอบจริง
+2. **ใส่รายละเอียดเฉพาะ**: เพิ่มรายละเอียดเทคนิคที่เฉพาะเจาะจงกับงานของตนเอง
+3. **ใช้ภาพประกอบ**: อ้างอิงภาพใน screenshots/ folder ให้เหมาะสมกับเนื้อหา
+4. **เขียนปัญหาจริง**: ระบุปัญหาที่พบจริงและวิธีแก้ไขที่ใช้จริง
+5. **สะท้อนการเรียนรู้**: เขียนสิ่งที่เรียนรู้ได้อย่างจริงใจและเป็นประโยชน์
+
+### โครงสร้างไฟล์ที่แนะนำ
+```
+INDIVIDUAL_REPORT_[รหัสนักศึกษา].md
+```
+
+ตัวอย่าง: `INDIVIDUAL_REPORT_67543210044-3.md`
